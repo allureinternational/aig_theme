@@ -109,47 +109,6 @@ if ($sticky_header == 'yes') {
 					</div>
 				</div>
 			<?php endif; ?>
-			<div class="header__area-menubar-right">
-				<div class="header__area-menubar-right-box">
-					<?php if ($search_icon == 'yes'): ?>
-						<div class="header__area-menubar-right-box-search">
-							<div class="search">
-								<span class="header__area-menubar-right-box-search-icon open"><i
-										class="fal fa-search"></i></span>
-							</div>
-							<div class="header__area-menubar-right-box-search-box">
-								<form method="get" action="<?php echo esc_url(home_url('/')); ?>">
-									<input type="search" placeholder="<?php echo esc_attr('Search Here.....', 'conbix'); ?>"
-										value="<?php the_search_query(); ?>" name="s">
-									<button value="Search" type="submit"><i class="fal fa-search"></i>
-									</button>
-								</form>
-								<span class="header__area-menubar-right-box-search-box-icon"><i
-										class="fal fa-times"></i></span>
-							</div>
-						</div>
-					<?php endif; ?>
-					<?php if ($hamburger_show == 'yes'): ?>
-						<div class="header__area-menubar-right-sidebar">
-							<div class="header__area-menubar-right-sidebar-popup-icon">
-								<?php if (!empty($hamburger_icon['url'])) { ?>
-									<img src="<?php echo esc_url($hamburger_icon['url']); ?>" alt="icon">
-
-								<?php } else { ?>
-									<img src="<?php echo esc_url(get_theme_file_uri('assets/img/icon/menu.svg')); ?>"
-										alt="Menu">
-								<?php }
-								?>
-
-							</div>
-						</div>
-					<?php endif; ?>
-					<?php if ($cta_menu == 'yes'): ?>
-						<div class="header__area-menubar-right-box-btn">
-							<a class="btn-one" href="<?php echo esc_url(conbix_option('header_one_button_url')); ?>"><?php echo esc_html(conbix_option('header_one_button_text')); ?><i
-									class="far fa-chevron-double-right"></i></a>
-						</div>
-					<?php endif; ?>
 					<!-- sidebar Menu Start -->
 					<div class="header__area-menubar-right-sidebar-popup">
 						<div class="sidebar-close-btn"><i class="fal fa-times"></i></div>
