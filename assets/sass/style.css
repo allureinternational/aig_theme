@@ -4491,7 +4491,7 @@ Banner Two CSS
   line-height: 60px;
   display: inline-block;
   text-align: center;
-  background: var(--primary-color-2);
+  background: #cc3399;
   font-size: 22px;
   color: var(--text-white);
   border-radius: 50%;
@@ -4511,7 +4511,7 @@ Banner Two CSS
   line-height: 60px;
   display: inline-block;
   text-align: center;
-  background: var(--primary-color-2);
+  background: #cc3399;
   font-size: 22px;
   color: var(--text-white);
   border-radius: 50%;
