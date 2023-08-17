@@ -20,8 +20,9 @@ $conbix_htmls = array(
 );
 ?>
 
-<div class="footer__two <?php echo esc_attr($enable_cta); ?>" data-background="<?php echo get_theme_file_uri(); ?>/assets/img/shape/footer-bg-1.png">
-	<?php if ($footer_cta == 'yes') : ?>
+<div class="footer__two">
+	<?php if ($footer_cta == 'No') : 
+		?>
 		<!-- Subscribe Area Start -->
 		<div class="subscribe__area">
 			<div class="container">
@@ -49,9 +50,9 @@ $conbix_htmls = array(
 		</div>
 		<!-- Subscribe Area End -->
 	<?php endif; ?>
-	<?php if (is_active_sidebar('footer-22')) : ?>
-		<?php dynamic_sidebar('footer-22'); ?>
-	<?php endif; ?>
+	<?php// if (is_active_sidebar('footer-22')) : ?>
+		<?php// dynamic_sidebar('footer-22'); ?>
+	<?php// endif; ?>
 	<div class="copyright__two">
 		<div class="container">
 			<div class="row">
