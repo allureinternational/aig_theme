@@ -11229,7 +11229,7 @@ Copyright One CSS
 .copyright__one,
 .copyright__two,
 .copyright__three {
-  margin-top: 100px;
+  margin-top: -9px;
   padding: 30px 0;
   text-align: center;
   border-top: 1px solid var(--color-11);
@@ -11279,7 +11279,7 @@ Copyright Three CSS
   }
   .copyright__two,
   .copyright__three {
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .banner__three {
     padding-top: 225px;
