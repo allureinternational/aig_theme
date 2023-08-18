@@ -3365,7 +3365,7 @@ Menu Bar CSS
   display: inline-block;
 }
 .header__area-menubar-left-logo a img {
-  max-width: 300px;
+  max-width: 70px;
   position: relative;
   z-index: 9999;
 }
