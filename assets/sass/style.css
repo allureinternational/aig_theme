@@ -3365,7 +3365,7 @@ Menu Bar CSS
   display: inline-block;
 }
 .header__area-menubar-left-logo a img {
-  max-width: 60px;
+  max-width: 300px;
   position: relative;
   z-index: 9999;
 }
@@ -3458,7 +3458,7 @@ Menu Bar CSS
   color: var(--text-heading-color);
   display: block;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
   transition: all 0.4s ease-out 0s;
   text-transform: uppercase;
