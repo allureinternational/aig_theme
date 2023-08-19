@@ -19,7 +19,7 @@ if ($sticky_header == 'yes') {
 ?>
 <?php if ($enable_topbar == 'yes'): ?>
 	<!-- Top Bar Start -->
-	<!-- <div class="top__bar">
+	<div class="top__bar">
 		<div class="container custom__container">
 			<div class="row">
 				<div class="col-xl-5 col-md-6">
@@ -60,42 +60,42 @@ if ($sticky_header == 'yes') {
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<!-- Top Bar End -->
 <?php endif; ?>
 <!-- Header Area Start -->
-<!-- <div class="header__area <?php echo esc_attr($sticky_enable); ?>">
+<div class="header__area <?php echo esc_attr($sticky_enable); ?>">
 	<div class="container custom__container">
 		<div class="header__area-menubar">
-			<!-- <div class="header__area-menubar-left">
+			<div class="header__area-menubar-left">
 				<div class="header__area-menubar-left-logo">
 					<?php
-					//if (has_custom_logo()) {
-						//the_custom_logo();
-					//} else {
-						//if (!empty($header_logo_one['url']) && !empty($header_logo_two['url'])) { ?>
-							<a href="<?php //echo esc_url(home_url('/')); ?>">
-								<img class="dark-n" src="<?php //echo esc_url($header_logo_one['url']); ?>"
-									alt="<?php //bloginfo('name'); ?>">
+					if (has_custom_logo()) {
+						the_custom_logo();
+					} else {
+						if (!empty($header_logo_one['url']) && !empty($header_logo_two['url'])) { ?>
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<img class="dark-n" src="<?php echo esc_url($header_logo_one['url']); ?>"
+									alt="<?php bloginfo('name'); ?>">
 								<img class="light-n" src="<?php //echo esc_url($header_logo_two['url']); ?>"
-									alt="<?php //bloginfo('name'); ?>">
+									alt="<?php bloginfo('name'); ?>">
 							</a>
 							<?php
-						//} else {
+						} else {
 							?>
-							<a href="<?php //echo esc_url(home_url('/')); ?>">
-								<img class="dark-n" src="<?php //echo get_theme_file_uri(); ?>/assets/img/logo-1.png"
-									alt="<?php //bloginfo('name'); ?>">
-								<img class="light-n" src="<?php //echo get_theme_file_uri(); ?>/assets/img/logo-2.png"
-									alt="<?php //bloginfo('name'); ?>">
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<img class="dark-n" src="<?php echo get_theme_file_uri(); ?>/assets/img/logo-1.png"
+									alt="<?php bloginfo('name'); ?>">
+								<img class="light-n" src="<?php echo get_theme_file_uri(); ?>/assets/img/logo-2.png"
+									alt="<?php bloginfo('name'); ?>">
 							</a>
 							<?php
-						//}
-					//}
+						}
+					}
 					?>
 				</div>
-			</div> -->
-			<!-- <?php if (has_nav_menu('header-menu')): ?>
+			</div>
+			<?php if (has_nav_menu('header-menu')): ?>
 				<div class="header__area-menubar-center">
 					<div class="header__area-menubar-center-menu menu-responsive">
 						<?php
@@ -108,18 +108,18 @@ if ($sticky_header == 'yes') {
 						?>
 					</div>
 				</div>
-			<?php endif; ?> -->
+			<?php endif; ?>
 					<!-- sidebar Menu Start -->
-					<!-- <div class="header__area-menubar-right-sidebar-popup">
+					<div class="header__area-menubar-right-sidebar-popup">
 						<div class="sidebar-close-btn"><i class="fal fa-times"></i></div>
 						<?php dynamic_sidebar('hamburger-menu'); ?>
 					</div>
-					<div class="sidebar-overlay"></div>-->
+					<div class="sidebar-overlay"></div>
 					<!-- sidebar Menu Start -->
-				<!-- </div>
+				</div>
 				<div class="responsive-menu"></div>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 <!-- Header Area End -->
