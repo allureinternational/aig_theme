@@ -23,6 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
 	<?php wp_body_open(); ?>
 	<?php if (class_exists('CSF')) {
 		$elements = 'elements-design';
